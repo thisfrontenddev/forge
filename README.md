@@ -1,28 +1,31 @@
-# Turborepo starter
+# Forge
 
-This Turborepo starter is maintained by the Turborepo core team.
+A personal workout tracking application designed specifically for my fitness needs and training style.
 
-## Using this example
+## About
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+Forge is my custom-built fitness companion, tailored to track workouts exactly how I want them. This isn't a generic fitness app - it's built around my specific training requirements, exercise preferences, and the metrics that matter most to my fitness journey.
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This project is structured as a Turborepo monorepo with the following packages:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `web`: Next.js 15 application with my personalized workout tracking interface
+- `@forge/db`: Database package with Drizzle ORM, PostgreSQL schemas, and Supabase integration
+- `@forge/eslint-config`: Shared ESLint configurations
+- `@forge/tsconfig`: TypeScript configurations used throughout the monorepo
+- `@forge/prettier-config`: Shared Prettier formatting rules
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Core Features (Built for My Needs)
+
+- **Custom Workout Logging**: Track exercises, sets, reps, and weights the way I train
+- **Personal Exercise Database**: My exercise library with movements I actually do
+- **Progress Tracking**: Monitor my fitness progress with metrics I care about
+- **Streamlined UX**: No bloat, just the features I need for my workouts
+
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/) for type safety and better developer experience.
 
 ### Utilities
 
