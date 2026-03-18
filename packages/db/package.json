@@ -19,19 +19,26 @@
   },
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint",
-    "push": "pnpm drizzle-kit push",
-    "studio": "pnpm drizzle-kit studio"
+    "push": "pnpm with-env drizzle-kit push",
+    "studio": "pnpm with-env drizzle-kit studio",
+    "check": "pnpm with-env drizzle-kit check",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "drizzle-orm": "^0.36.4",
     "drizzle-zod": "^0.5.1",
+    "postgres": "^3.4.5",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@forge/eslint-config": "workspace:*",
     "@forge/prettier-config": "workspace:*",
     "@forge/tsconfig": "workspace:*",
+    "@types/node": "^20",
+    "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.28.1",
     "eslint": "catalog:",
     "prettier": "catalog:",

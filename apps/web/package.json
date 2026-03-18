@@ -13,7 +13,8 @@
   "dependencies": {
     "next": "catalog:next15",
     "react": "catalog:next15",
-    "react-dom": "catalog:next15"
+    "react-dom": "catalog:next15",
+    "@forge/db": "workspace:*"
   },
   "devDependencies": {
     "@forge/eslint-config": "workspace:*",
